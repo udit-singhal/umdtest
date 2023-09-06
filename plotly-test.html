@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="plotly-test.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <div class="loading">
+        <div class="loading-text">Loading...
+        </div>
+      </div>
+    <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+            <li class="slide" data-active>
+                
+                    <!-- <h2>Line Plot</h2> -->
+                    <div id="plot"></div>
+                    <span class="features">
+                        <div class="controls">
+                            <label for="smoothing">Smoothing Factor:</label>
+                            <input type="range" id="smoothing" min="1" max="10" step="1" value="1">
+                        </div>
+                        <!-- <div id="legend-plot"></div>  -->
+                    </span>
+                    
+               
+            </li>
+            <li class="slide">
+                
+                    <div id="confusion-matrices-plot"></div>
+                    
+            </li>
+            <li class="slide">
+              
+                    <!-- <h2>Radar Chart</h2> -->
+                    <div id="radar-chart-plot"></div>
+                    
+                
+            </li>
+        </ul>  
+    </div>
+    <script src="plotly-test.js"></script>
+</body>
+</html>
